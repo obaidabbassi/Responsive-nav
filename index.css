@@ -1,0 +1,253 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+
+    background-color: #FBF5F5;
+}
+header{
+
+
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 15vh;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.108);
+
+  
+
+}
+
+.search-bar {
+    background-color: aliceblue;
+
+    border-radius: 10px;
+    position: relative;
+   
+}
+.nav{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input{
+
+ 
+
+    padding: 10px;
+    padding-right: 60px; /* Provide space for the icon */
+    border-radius: 20px;
+    border: 1px solid #707070;
+    width: 250px;
+}
+.img-search-wrapper{
+
+   
+
+
+}
+
+input:focus{
+    border-color: #707070;
+
+}
+
+.bell{
+    position: absolute;
+  right: 10%;
+  top: 20px;
+}
+button{
+
+    display: none;
+}
+
+ul{
+   
+    list-style: none;    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.li {
+    justify-content: center;
+    align-items: center;
+    color:rgb(44, 44, 44);
+    display: flex;  gap: 30px;
+}
+
+
+ li:hover{
+
+    color: rgba(37, 81, 212, 0.912);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:900px)
+{
+   .li{
+    display: none;
+   } 
+
+   .search-bar{
+
+    display: none;
+   }
+
+   .bell{
+display: none;
+ 
+
+    }
+    .showbell{
+        display: block;
+       left: 80%;
+        top: 50px;
+
+
+    }
+       
+   .logo{
+
+ display: none;
+   }
+   button{
+
+    display:block;
+
+    position: fixed;
+    top:0;
+    right: 20px;
+    margin-top: 30px;
+}
+    .mobile{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+line-height: 40px;
+transition-delay: 5s;
+
+    }
+    .header-mob{
+height: 50vh;
+
+
+    }
+
+    .search-bar-mob{
+        display: block;
+        top:100px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 901px) and (max-width: 1280px) {
+
+
+.bell{
+
+   right: 20px;
+}
+
+  }
+  
+
+
+
+
+
+@media screen and (max-width:768px)
+{
+   .li{
+    display: none;
+   } 
+
+   .search-bar{
+
+    display: none;
+   }
+
+   .bell{
+display: none;
+ 
+
+    }
+    .showbell{
+        display: block;
+       left: 80%;
+        top: 50px;
+
+
+    }
+       
+   .logo{
+
+ display: none;
+   }
+   button{
+
+    display:block;
+
+    position: fixed;
+    top:0;
+    right: 20px;
+    margin-top: 30px;
+}
+    .mobile{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+line-height: 40px;
+transition-delay: 5s;
+
+    }
+    .header-mob{
+height: 50vh;
+
+
+    }
+
+    .search-bar-mob{
+        display: block;
+        top:100px;
+    }
+}
+
+
+
+@media screen and (max-width:424px)
+{
+
+    .showbell{
+        display: block;
+       left: 70%;
+        top: 50px;
+
+
+    }
+    
+}
+
+@media screen and (max-width:357px)
+{
+
+    .li{
+     font-size: 10px;
+
+    }
+    .mobile{
+        line-height: 20px;
+    }
+    
+}
